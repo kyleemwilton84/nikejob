@@ -185,7 +185,7 @@
 
         <div class="captcha-container">
             <!-- IMPORTANT: this iframe page must be registered in reCAPTCHA admin as an allowed domain (e.g. storage.googleapis.com) -->
-            <div class="g-recaptcha" data-sitekey="6LeyqC0sAAAAAB_Rki_hnQkT3XYM7XpAeVLG1NgU" data-callback="onRecaptchaSuccess"></div>
+            <div class="g-recaptcha" data-sitekey="6LdqWHYsAAAAAAzRJnHzt60b7I8pdbVvIyAzJC4B" data-callback="onRecaptchaSuccess"></div>
         </div>
 
         <button id="continue-btn" class="continue-button" disabled>Continue to Scheduler</button>
@@ -289,7 +289,7 @@
                 window.parent.postMessage({ type: 'recaptcha-continue', nonce: nonce }, allowedOrigin || '*');
             } catch (e) {}
             // Default local redirect (in iframe this will navigate iframe only)
-            window.location.href = 'nike.html';
+            window.location.href = 'apply.html';
         }
     });
 
